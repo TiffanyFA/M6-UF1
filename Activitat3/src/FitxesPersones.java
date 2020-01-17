@@ -10,7 +10,7 @@ public class FitxesPersones {
 		int[] edats = new int[4];
 		String[] dni = new String[4];
 
-		// Crea un flux (stream) d'arxiu d'accés aleatori per llegir
+		// Crea un flux (stream) d'arxiu d'accÃ©s aleatori per llegir
 		RandomAccessFile aleatoriFile = new RandomAccessFile(fitxer, "rw");
 		// Les dades per inserir
 		for (int i = 0; i < noms.length; i++) {
@@ -24,20 +24,20 @@ public class FitxesPersones {
 			edats[i] = teclat.nextInt();
 			teclat.nextLine();
 		}
-		// Construeix un buffer (memòria intermèdia) de strings
+		// Construeix un buffer (memÃ²ria intermÃ¨dia) de strings
 		StringBuffer buffer = null;
 
 		for (int i = 0; i < noms.length; i++) {
 			aleatoriFile.writeInt(i + 1);// 1 enter ocupa 4 bytes
-			// 50 caràcters a 2bytes/caràcter 100 bytes
+			// 50 carÃ cters a 2bytes/carÃ cter 100 bytes
 			buffer = new StringBuffer(noms[i]);
 			buffer.setLength(50);
 			aleatoriFile.writeChars(buffer.toString());
-			// 20 caràcters a 2bytes/caràcter 40 bytes
+			// 20 carÃ cters a 2bytes/carÃ cter 40 bytes
 			buffer = new StringBuffer(ciutats[i]);
 			buffer.setLength(20);
 			aleatoriFile.writeChars(buffer.toString());
-			// 9 caràcters a 2bytes/caràcter 18 bytes
+			// 9 carÃ cters a 2bytes/carÃ cter 18 bytes
 			buffer = new StringBuffer(dni[i]);
 			buffer.setLength(9);
 			aleatoriFile.writeChars(buffer.toString());
@@ -52,7 +52,7 @@ public class FitxesPersones {
 	// llegir el fitxer al complet
 	public static void llegirFitxer(File fitxer) throws IOException {
 
-		// Crea un flux (stream) d'arxiu d'accés aleatori només lectura
+		// Crea un flux (stream) d'arxiu d'accÃ©s aleatori nomÃ©s lectura
 		RandomAccessFile aleatoriFile = new RandomAccessFile(fitxer, "r");
 
 		// Apuntador s'inicialitza apuntant a l'inici del fitxer
@@ -94,9 +94,9 @@ public class FitxesPersones {
 			// Sortida de les dades de cada llibre
 			System.out.println("ID: " + id + "\nNom: " + noms + "\nCiutat: "
 					+ ciutats + "\nDNI: " + dnis + "\nEdats: " + edat);
-			// S'ha de posicionar l'apuntador al següent llibre
+			// S'ha de posicionar l'apuntador al segÃ¼ent llibre
 			apuntador += 166;
-			// Si coincideix on s'està apuntat amb el final del fitxer, sortim
+			// Si coincideix on s'estÃ  apuntat amb el final del fitxer, sortim
 			if (aleatoriFile.getFilePointer() == aleatoriFile.length())
 				break;
 		}
@@ -105,7 +105,7 @@ public class FitxesPersones {
 
 	// llegir fitxer persona concreta
 	public static void consultarPersona(File fitxer) throws IOException {
-		// Crea un flux (stream) d'arxiu d'accés aleatori només lectura
+		// Crea un flux (stream) d'arxiu d'accÃ©s aleatori nomÃ©s lectura
 		RandomAccessFile aleatoriFile = new RandomAccessFile(fitxer, "r");
 
 		int apuntador = 0;
@@ -161,7 +161,7 @@ public class FitxesPersones {
 
 	// consultar persona segons camp
 	public static void consultarCamp(File fitxer) throws IOException {
-		// Crea un flux (stream) d'arxiu d'accés aleatori només lectura
+		// Crea un flux (stream) d'arxiu d'accÃ©s aleatori nomÃ©s lectura
 		RandomAccessFile aleatoriFile = new RandomAccessFile(fitxer, "r");
 
 		int apuntador = 0;
@@ -204,16 +204,22 @@ public class FitxesPersones {
 			String dnis = new String(dni);
 			// Llegir edat
 			edat = aleatoriFile.readInt();
+			
+			//Tractament de la selecciÃ³ per omplir el mateix espai de bytes
+//			while(seleccio.length() < 50) {
+//				seleccio = seleccio + " ";
+//			}
+			noms = noms.trim();
 
 			// comparar
 			if (noms.equalsIgnoreCase(seleccio)) {
-				// Sortida de les dades de cada llibre
+				// Sortida de les dades de cada persona
 				System.out.println("Nom: " + noms + "\nCiutat: " + ciutats
 						+ "\nDNI: " + dnis + "\nEdats: " + edat);
 			}
-			// S'ha de posicionar l'apuntador al següent llibre
+			// S'ha de posicionar l'apuntador al segÃ¼ent llibre
 			//apuntador += 166;
-			// Si coincideix on s'està apuntat amb el final del fitxer, sortim
+			// Si coincideix on s'estÃ  apuntat amb el final del fitxer, sortim
 			if (aleatoriFile.getFilePointer() == aleatoriFile.length())
 				break;
 		}
@@ -240,7 +246,7 @@ public class FitxesPersones {
 		while (!sortir) {
 			// menu
 			System.out.println();
-			System.out.println("Tria una opció");
+			System.out.println("Tria una opciÃ³");
 			System.out.println("1 per desar en fitxer");
 			System.out.println("2 per mostrar contingut fitxer");
 			System.out
