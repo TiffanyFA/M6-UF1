@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><response>
+
+<row _address="https://analisi.transparenciacatalunya.cat/resource/_9qmy-ujbd/row-rxjr~35j4_7fbr" _position="0" _uuid="00000000-0000-0000-1326-B878077BA22C" id="1">
+<nom>AIGUADOLÇ-VELA</nom>
+<adre_a>Port d'Aiguadolç, s/n</adre_a>
+<codi_postal>08870</codi_postal>
+<municipi>Sitges</municipi>
+<comarca>Garraf</comarca>
+<modalitat>Vela lleugera</modalitat>
+</row>
+<row _address="https://analisi.transparenciacatalunya.cat/resource/_9qmy-ujbd/row-247k~gzqu.sv9d" _position="0" _uuid="00000000-0000-0000-44FA-DA0A8406DFD1" id="2">
+<nom>BASE NÀUTICA SURF, SAIL &amp; FUN</nom>
+<adre_a>C.Marquès de Casa Riera, s/n</adre_a>
+<codi_postal>08394</codi_postal>
+<municipi>Sant Vicenç de Montal</municipi>
+<comarca>Maresme</comarca>
+<modalitat>Formació, lloguer de vela lleugera, caiacs i pàdels surfs</modalitat>
+</row>
+<row id="3"><nom>TGN</nom></row></response>
