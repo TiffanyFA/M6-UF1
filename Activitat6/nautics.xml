@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<response>
+    <rows address="https://analisi.transparenciacatalunya.cat/resource/_9qmy-ujbd/row-rxjr~35j4_7fbr" id="row-rxjr~35j4_7fbr" position="0" uuid="00000000-0000-0000-1326-B878077BA22C">
+        <adreça>Port d'Aiguadolç, s/n</adreça>
+        <codi_postal>08870</codi_postal>
+        <comarca>Garraf</comarca>
+        <modalitat>Vela lleugera</modalitat>
+        <municipi>Sitges</municipi>
+        <nom>AIGUADOLÇ-VELA</nom>
+    </rows>
+    <rows address="https://analisi.transparenciacatalunya.cat/resource/_9qmy-ujbd/row-247k~gzqu.sv9d" id="row-247k~gzqu.sv9d" position="0" uuid="00000000-0000-0000-44FA-DA0A8406DFD1">
+        <adreça>C.Marquès de Casa Riera, s/n</adreça>
+        <codi_postal>08394</codi_postal>
+        <comarca>Maresme</comarca>
+        <modalitat>Formació, lloguer de vela lleugera, caiacs i pàdels surfs</modalitat>
+        <municipi>Sant Vicenç de Montal</municipi>
+        <nom>BASE NÀUTICA SURF, SAIL &amp;amp; FUN</nom>
+    </rows>
+    <rows address="https://analisi.transparenciacatalunya.cat/resource/_9qmy-ujbd/row-8z4v.5h8u.x9ih" id="row-8z4v.5h8u.x9ih" position="0" uuid="00000000-0000-0000-D58A-FD6C916DBFEF">
+        <adreça>Moll Gregal, 18</adreça>
+        <codi_postal>08005</codi_postal>
+        <comarca>Barcelonès</comarca>
+        <modalitat>Lloguer d'embarcacions</modalitat>
+        <municipi>Barcelona</municipi>
+        <nom>BUSINESS YACHTCLUB BARCELONA</nom>
+    </rows>
+</response>

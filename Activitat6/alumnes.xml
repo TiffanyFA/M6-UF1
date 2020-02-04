@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<alumnes>
+    <alumnes id="0">
+        <cognom1>Grange</cognom1>
+        <cognom2>Borras</cognom2>
+        <nom>Alex</nom>
+        <notaFinal>5</notaFinal>
+    </alumnes>
+    <alumnes id="1">
+        <cognom1>Grange</cognom1>
+        <cognom2>Borras</cognom2>
+        <nom>Nuria</nom>
+        <notaFinal>10</notaFinal>
+    </alumnes>
+    <alumnes id="2">
+        <cognom1>Grange</cognom1>
+        <cognom2>Borras</cognom2>
+        <nom>Fede</nom>
+        <notaFinal>4</notaFinal>
+    </alumnes>
+</alumnes>
